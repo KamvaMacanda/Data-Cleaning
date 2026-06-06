@@ -8,9 +8,6 @@ Exploratory Data Analysis and data cleaning project.
 - Git 
 
 
-## References 
-
-Dataset 
 
 
 
