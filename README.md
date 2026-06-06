@@ -11,9 +11,7 @@ Exploratory Data Analysis and data cleaning project.
 ## References 
 
 Dataset 
-```bash
-https://www.kaggle.com/datasets/laveshjadon/ai-impact-on-students
-```
+
 
 
 
