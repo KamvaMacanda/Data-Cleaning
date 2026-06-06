@@ -8,12 +8,7 @@ Exploratory Data Analysis and data cleaning project.
 - Git 
 
 
-## References 
 
-Dataset 
-```bash
-https://www.kaggle.com/datasets/laveshjadon/ai-impact-on-students
-```
 
 
 
