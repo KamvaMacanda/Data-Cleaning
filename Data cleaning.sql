@@ -56,8 +56,12 @@ SELECT * ,
  FROM layoffs_staging; 
  
  
+ -- Deleting all duplicate entries 
+DELETE   
+ FROM layoffs_staging_2  
+ WHERE ID_num > 1 ;  
  
- 
- 
- 
+ SELECT * 
+ FROM layoffs_staging_2 ; 
+  
  
