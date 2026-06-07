@@ -65,3 +65,23 @@ DELETE
  FROM layoffs_staging_2 ; 
   
  
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
