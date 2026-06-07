@@ -25,11 +25,19 @@ UPDATE  layoffs_staging_2
 SET country = TRIM( TRAILING '.' FROM country)  
 WHERE  country LIKE 'United States%' ; 
  
-SELECT `date` ,
-STR_TO_DATE  (`date` , '%d / %m / %Y' ) 
-FROM layoffs_staging_2 ; 
-
+SELECT `date` 
+FROM layoffs_staging_2 ;  
  
+ UPDATE layoffs_staging_2 
+ SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y') ;
+
+ALTER TABLE layoffs_staging_2 
+MODIFY COLUMN `date` DATE ; 
+ 
+ SELECT * 
+ FROM layoffs_staging_2 
+WHERE total_laid_off IS NULL 
+AND percentage_laid_off IS NULL ;
 
 
 
