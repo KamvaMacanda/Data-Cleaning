@@ -45,6 +45,17 @@ FROM layoffs_staging_2
 WHERE industry IS NULL 
 OR industry = '' ; 
 
+SELECT * 
+FROM layoffs_staging_2
+WHERE company = 'Airbnb' ;  
+
+SELECT * 
+FROM layoffs_staging_2 t1
+JOIN layoffs_staging_2 t2 
+		ON t1.company = t2.company 
+        WHERE (t1.industry IS NULL OR t1.industry= '')  
+AND t1.location IS NOT NULL  
+
 
 
 
