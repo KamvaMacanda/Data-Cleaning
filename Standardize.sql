@@ -34,10 +34,16 @@ FROM layoffs_staging_2 ;
 ALTER TABLE layoffs_staging_2 
 MODIFY COLUMN `date` DATE ; 
  
+ -- Looking for empty values 
  SELECT * 
  FROM layoffs_staging_2 
 WHERE total_laid_off IS NULL 
-AND percentage_laid_off IS NULL ;
+AND percentage_laid_off IS NULL ; 
+
+SELECT *
+FROM layoffs_staging_2 
+WHERE industry IS NULL 
+OR industry = '' ; 
 
 
 
